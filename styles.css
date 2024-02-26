@@ -1,0 +1,208 @@
+:root {
+    --SubtitleColor: #C0DF33;
+    --BackgroundC: #E6EFF5;
+    --TitleColor: #2AB3B1;
+    --TextColor: #fff;
+    --DescriptionColor: #9AA7BE;
+    --Font: 'Karla', sans-serif;
+    --FirstContainerBColor: #fff;
+    --ButtonColor: #C0DF33; 
+    --RegisterColor: #2AB3B1;
+}
+/* GENERAL STYLES */
+.Main-container {
+    height: 100%;
+    width: 100%;
+    background-color: var(--BackgroundC);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.sub-main-container {
+    width: 635px;
+    height: 435px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 72px;
+    background: #FFF;
+    box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
+}
+
+@media screen and (min-width: 768px) {
+    .sub-main-container {
+        width: 44%;
+    } 
+}
+
+/* INFO CONTAINER */
+.info-container {
+    background-color: var(--FirstContainerBColor);
+    border-radius: 5px 5px 0 0;
+    font-family: var(--Font);
+    width: 635px;
+    height: 435px;
+}
+
+@media screen and (min-width: 768px){
+    .info-container {
+        padding: 40px;
+        border-radius: 8px 8px 0 0;
+    }
+    
+}
+
+.info-container h1 {
+    color: var(--TitleColor);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.info-container h2 {
+    color: var(--SubtitleColor);
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 24px;
+    letter-spacing: -0.187px;
+    line-height: 20px;
+}
+
+.info-container p {
+    color: var(--DescriptionColor);
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 16px;
+    letter-spacing: -0.175px;
+    line-height: 26px;
+}
+
+
+/* REGISTER CONTAINER */
+.register-container-info {
+    background-color: var(--RegisterColor);
+    padding: 24px;
+    font-family: var(--Font);
+    color: var(--TextColor);
+}
+
+@media screen and (min-width: 768px) {
+    .register-container-info {
+        padding: 40px;
+    }
+}
+
+.register-container-info h1 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.225px;
+    margin-bottom: 18px;
+}
+
+.register-container-info h2 {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    gap: 11px;
+    margin-bottom: 4px;
+}
+
+.register-container-info h2 .span {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+    letter-spacing: -0.2px;
+    opacity: 0.5;
+}
+.register-container-info p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+    letter-spacing: -0.2px;
+    margin-top: 4px;
+}
+
+.register-container-info .boton {
+    font-family: var(--Font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.2px;
+    padding: 15px 102px 15px 102px;
+    border-radius: 5px;
+    background-color: var(--ButtonColor);
+    border: none;
+    color: var(--TextColor);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.10);
+    width: 100%;
+    cursor: pointer;
+    margin-top: 26px;
+}
+
+@media screen and (min-width: 768px) {
+    .register-container-info .boton {
+        font-size: 14px;
+    }
+    
+}
+
+/* HOVER BUTTON */
+.boton:hover {
+    background-color: greenyellow;
+    color: #fff;
+}
+
+
+
+
+/* US CONTAINER */
+.us-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 24px 49px 24px 24px;
+    font-family: var(--Font);
+    color: var(--TextColor);
+    background-color: var(--RegisterColor);
+    opacity: 0.85;
+    gap: 10px;
+}
+
+.us-container h1 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.225px;
+}
+.us-container p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.175px;
+    opacity: 0.75;
+    margin-bottom: 24px;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .register-container {
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+ 
